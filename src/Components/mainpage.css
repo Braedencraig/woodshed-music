@@ -1,0 +1,272 @@
+.flexContainer {
+  background: #743135;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imageBackground {
+  background: url('../logowood.png');
+  height: 900px;
+  width: 900px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.flexText {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: -3%;
+}
+
+.flexOne,
+.flexTwo {
+  width: 50%;
+  position: relative;
+  max-width: 300px;
+}
+
+.flexOne {
+  left: -12%;
+}
+
+.textTop {
+  margin-bottom: 50%;
+  margin-top: 70%;
+}
+
+svg {
+  fill: white;
+  width: 40px;
+  height: 40px;
+}
+
+.social {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  top: -80px;
+}
+.iframeStuff {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flexTwo {
+  right: -42%;
+}
+
+p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Concert One', sans-serif;
+  color: #f1f1f1;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.title {
+  width: 100%;
+  background: none;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+p {
+  color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 38px;
+  font-size: 18px;
+}
+
+a {
+  color: #f1f1f1;
+  transition: 0.4s all;
+}
+
+a:hover {
+  opacity: 0.65;
+}
+
+h1 {
+  white-space: nowrap;
+  margin: 0 -5px 0 0;
+  letter-spacing: 5px;
+  line-height: 1;
+  font-size: 7vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+#contact {
+  padding: 0 20px;
+  border-radius: 2px;
+  margin-bottom: 50px;
+}
+
+form {
+  padding: 5%;
+  display: grid;
+  grid-gap: 1em;
+
+  width: 100%;
+  border-radius: 5px;
+}
+
+fieldset {
+  height: 100%;
+  width: 94.5%;
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+  padding: 20px 5px 10px 5px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font: 400 1em/1.2 'Roboto', sans-serif;
+  color: #f1f1f1;
+  background: none;
+}
+
+/* textarea styling */
+textarea {
+  outline: none;
+  margin: 20px 5px 10px 5px;
+  height: 76%;
+  width: 100%;
+  border: none;
+  resize: none;
+  font: 400 1em/1.2 'Montserrat', sans-serif;
+  color: #f1f1f1;
+  background: none;
+}
+
+/* label styling */
+label {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 16px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+label::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  border-bottom: 3px solid #f1f1f1;
+  transition: transform 0.3s ease;
+}
+
+label > span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+input:focus + label {
+  border: none;
+}
+
+input:focus + label span,
+input:valid + label span {
+  transform: translateY(-200%);
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+input:focus + label::after {
+  transform: translateX(0%);
+  color: #f1f1f1;
+}
+
+textarea:focus + label {
+  border: none;
+  color: #f1f1f1;
+}
+
+textarea:focus + label span,
+textarea:valid + label span {
+  transform: translateY(-520%);
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+textarea:focus + label::after {
+  transform: translateX(0%);
+}
+
+button,
+button:hover {
+  transition: 0.5s;
+}
+
+button {
+  margin-top: 25px;
+  padding: 20px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+
+  opacity: 1;
+  background: #f1f1f1;
+}
+
+button:hover {
+  opacity: 0.65;
+}
+
+button span:nth-child(2) {
+  display: none;
+}
+
+button:focus:nth-child(2) {
+  display: inline;
+}
+
+button:focus:nth-child(1) {
+  display: none;
+}
+
+#contact {
+  width: 60%;
+  margin: 0 auto;
+}
