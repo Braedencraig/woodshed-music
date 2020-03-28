@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Blockhead';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../Assets/Fonts/BlockheadUnplugged.ttf') format('truetype');
+  src: local('Blockhead'), local('Blockhead'),
+  url('../Assets/Fonts/BlockheadUnplugged.ttf') format('truetype')
+}
+
+
 .flexContainer {
   background: #743135;
   width: 100%;
@@ -7,10 +17,12 @@
 
 .imageBackground {
   background: url('../logowood.png');
-  height: 900px;
-  width: 900px;
+  height: 1000px;
+  width: 1000px;
   margin: 0 auto;
   background-size: cover;
+  transition: all 0.5s;
+
 }
 
 .flexText {
@@ -28,7 +40,11 @@
 }
 
 .flexOne {
-  left: -12%;
+  left: -14%;
+}
+
+.flexTwo {
+  right: -49%;
 }
 
 .textTop {
@@ -36,10 +52,18 @@
   margin-top: 70%;
 }
 
+.flexTwo .textTop {
+  margin-bottom: 55%;
+  transition: all 0.5s;
+
+}
+
 svg {
   fill: white;
   width: 40px;
   height: 40px;
+  transition: all 0.5s;
+
 }
 
 .social {
@@ -48,24 +72,46 @@ svg {
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
-  top: -80px;
+  top: -90px;
+  transition: all 0.5s;
+
 }
+
 .iframeStuff {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: -3%;
+  margin-bottom: 3%;
+  transition: all 0.5s;
+
 }
 
-.flexTwo {
-  right: -42%;
-}
 
-p {
+
+.flexText p {
   margin: 0;
   color: white;
   text-align: center;
   line-height: 28px;
   font-size: 18px;
+  transition: all 0.5s;
+}
+
+.preContact p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 28px;
+  font-size: 40px;
+  margin-bottom: 40px;
+  transition: all 0.5s;
+
+}
+
+.preContact {
+  margin-bottom: -50px;
+  margin-top: 60px;
 }
 
 h3 {
@@ -92,9 +138,9 @@ h3 {
 
 p {
   color: #f1f1f1;
-  font-family: 'Montserrat', sans-serif;
   line-height: 38px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Blockhead', 'sans-serif';
 }
 
 a {
@@ -270,3 +316,157 @@ button:focus:nth-child(1) {
   width: 60%;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 1360px) {
+  form {
+    width: 92%;
+  }
+
+  button {
+    width: 50%;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+ .flexOne{
+   left: -7%;
+ }
+
+ .flexTwo {
+   right: -44%;
+ }
+}
+
+@media only screen and (max-width: 1150px) {
+ .imageBackground {
+   width: 800px;
+   height: 800px;
+ }
+
+ .flexText p {
+   font-size: 16px;
+ }
+
+ .flexOne {
+   left: -4%;
+   max-width: 200px;
+ }
+
+ .flexTwo {
+   right: -54%;
+   max-width: 200px;
+ }
+ }
+
+
+ @media only screen and (max-width: 1050px) {
+  .imageBackground {
+    width: 800px;
+    height: 800px;
+  }
+ 
+  }
+
+
+ @media only screen and (max-width: 920px) {
+  .imageBackground {
+    width: 700px;
+    height: 700px;
+  }
+
+  .flexText {
+    display: none;
+  }
+
+  .social {
+    top: -60px;
+  }
+ 
+  }
+
+
+
+ @media only screen and (max-width: 730px) {
+  .imageBackground {
+    width: 500px;
+    height: 500px;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+
+
+  .social {
+    top: -40px;
+  }
+
+  iframe {
+    width: 70%
+  }
+
+  .preContact p {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .preContact {
+    margin-top: 30px;
+    margin-bottom: -40px;
+  }
+ 
+  }
+
+
+ @media only screen and (max-width: 630px) {
+  .imageBackground {
+    width: 400px;
+    height: 400px;
+
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  iframe {
+    height: 200px
+  }
+
+  .social {
+    top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .preContact {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: -40px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+ 
+  }
+
+  @media only screen and (max-width: 380px) {
+    .imageBackground {
+      width: 300px;
+      height: 350px;
+      margin-left: 2%
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .imageBackground {
+
+      margin-left: -4.5%
+    }
+  }
