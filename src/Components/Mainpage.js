@@ -1,8 +1,10 @@
 import React from 'react';
+import MyForm from '../Components/MyForm'
 import logo from '../logowood.png';
 import mainpage from '../Components/mainpage.css';
 
 function Mainpage() {
+
   return (
     <div className='flexContainer'>
       <div className='imageBackground'>
@@ -75,50 +77,11 @@ function Mainpage() {
       </div>
       <div className='preContact'>
         <p>Contact Us</p>
-        <p>The Woodshed Music Lessons</p>
       </div>
       <>
         <div className='flex'>
           <section id='contact'>
-            <form
-              action='http://www.focuspocus.io/magic/thewoodshedlessons@gmail.com'
-              method='post'
-            >
-              <fieldset>
-                <input type='text' name='name' autocomplete='off' required />
-                <label for='name'>
-                  <span>Full Name</span>
-                </label>
-              </fieldset>
-              <fieldset>
-                <input type='text' name='phoneNumber' autocomplete='off' required />
-                <label for='phoneNumber'>
-                  <span>Phone Number</span>
-                </label>
-              </fieldset>
-              <fieldset>
-                <input type='text' name='email' autocomplete='off' required />
-                <label for='email'>
-                  <span>E-mail</span>
-                </label>
-              </fieldset>
-              <fieldset>
-                <textarea
-                  name='message'
-                  id=''
-                  cols='30'
-                  rows='3'
-                  required
-                ></textarea>
-                <label for='message'>
-                  <span>Message</span>
-                </label>
-              </fieldset>
-              <button>
-                <span>Send</span>
-                <span>Sent</span>
-              </button>
-            </form>
+            <MyForm />
           </section>
         </div>
       </>
