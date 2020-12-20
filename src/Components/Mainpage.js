@@ -1,6 +1,6 @@
 import React from 'react';
 import MyForm from '../Components/MyForm'
-import mainpage from '../Components/mainpage.css';
+import '../Components/mainpage.css';
  
 function Mainpage() {
 
@@ -72,6 +72,7 @@ function Mainpage() {
           frameborder='0'
           allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen
+          title="Woodshed Music Lessons Introduction Video"
         ></iframe>
       </div>
       <div className='preContact'>
